@@ -26,9 +26,9 @@
             >Web<span class="logo-accent">Studio</span></a
           >
           <ul class="list site-nav">
-            <li><a class="site-nav header-link current" href="">Студія</a></li>
-            <li><a class="site-nav header-link" href="./portfolio.html">Портфоліо</a></li>
-            <li><a class="site-nav header-link" href="">Контакти</a></li>
+            <li class="list-nav-item"><a class="site-nav header-link current" href="">Студія</a></li>
+            <li class="list-nav-item"><a class="site-nav header-link" href="./portfolio.html">Портфоліо</a></li>
+            <li class="list-nav-item"><a class="site-nav header-link" href="">Контакти</a></li>
           </ul>
         </nav>
         <ul class="list header-container">
@@ -49,7 +49,7 @@
       <!-- Ефективні рішення -->
       <section class="overlay heading hero-heading">
         <h1 class="heading heading-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="button">Замовити послугу</button>
+        <button type="button" class="button" data-modal-open>Замовити послугу</button>
       </section>
 
       <!--  Особливості (приховано)-->
@@ -406,6 +406,20 @@
 </div>
 </div>
     </footer>
+
+<!-- Модалка -->
+<div class="backdrop is-hidden" data-modal>
+<div class="modal">
+  <button class="modal-btn" data-modal-close>
+    <svg class="modal-btn-icon" width="18" height="18">
+      <use href="./images/icons.svg#close"></use>
+    </svg>
+  </button>
+</div>
+
+</div>
+
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
